@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
     public float life = 10;
-
+    public float damage = 10;
     // Start is called before the first frame update
     void Awake()
     {
@@ -16,7 +15,13 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
+        if(collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemyComp))
+        {
+            
+            enemyComp.takeDamage(damage);
+            Debug.Log("Hit");
+        }
+
         Destroy(gameObject);
     }
 }

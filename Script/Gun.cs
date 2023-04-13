@@ -6,9 +6,9 @@ public class Gun : MonoBehaviour
 {
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
-    public float bulletSpeed;
-    public float fireRate;
+    public float bulletSpeed = 70, fireRate = 0.7f;
     float nextFire;
+
     void Update()
     {
         if(Input.GetMouseButton(0))

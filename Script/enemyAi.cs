@@ -16,7 +16,7 @@ public class enemyAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class enemyAi : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("HeroBox").transform;
+        player = GameObject.Find("Hero").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
