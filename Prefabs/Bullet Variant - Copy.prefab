@@ -74,7 +74,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.1
+  m_Time: 0.02
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -93,11 +93,11 @@ TrailRenderer:
       - serializedVersion: 3
         time: 0.95243466
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0.355149
+        outSlope: -0.355149
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
+        inWeight: 0.6169116
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -232,6 +232,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f32357e92f03541459ad4b7a514c3583, type: 2}
+    - target: {fileID: 3100973648264301079, guid: afe09d0d645d1694ab91fa8238d41b53, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7855649074866136632, guid: afe09d0d645d1694ab91fa8238d41b53, type: 3}
       propertyPath: m_Name
       value: Bullet Variant - Copy
